@@ -27,7 +27,7 @@ class CModel
 
 void CModel::show(){
 
-  printf("id 2:%d\n",id);
+  printf("饿汉 id 2:%d\n",id);
 
 }
 

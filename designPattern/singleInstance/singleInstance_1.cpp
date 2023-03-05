@@ -22,7 +22,7 @@ class CModel
 
 void CModel::show(){
 
- printf("id:%d\n",id);
+ printf(" 懒汉 id:%d\n",id);
 
 }
 

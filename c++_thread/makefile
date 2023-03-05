@@ -1,10 +1,6 @@
-CXX:=g++
-CXXFLAGS := -Wall -g -lpthread
-# 省略许多
-$(BUILD_DIR)/%: $(SRC_DIR)/%.cpp
-	@echo + G++ $@
-	@mkdir -p $(BUILD_DIR)
-	@echo "$(CXX) $(CXXFLAGS) -o $@ $<"
-	@$(CXX) $(CXXFLAGS) -o $@ $<
+CXX := g++    #指定编译器
+CXXFLAGS := -Wall -g -lpthread -std=c++11 #指定编译选项
+OBJS := thread.cpp
 
-g++ thread.cpp -std=c++11 -lpthread
+thread:thread.cpp
+	$(CXX) $(OBJS) $(CXXFLAGS)
