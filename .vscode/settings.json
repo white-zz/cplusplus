@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "read": "cpp"
+        "read": "cpp",
+        "thread": "cpp",
+        "chrono": "cpp"
     }
 }
